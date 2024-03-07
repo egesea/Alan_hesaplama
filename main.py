@@ -12,3 +12,15 @@ def paralelkenar(k, y):
 
 def eskenardortgen(a_k, y_k):
     print("Eşkenar dörtgenin alanı = {}".format((a_k * y_k) / 2))
+
+def alan_hesaplama():
+    while True:
+        print("""
+        1 - Kare
+        2 - Dikdörtgen
+        3 - Yamuk
+        4 - Paralelkenar
+        5 - Eşkenar Dörtgen
+        """)
+
+        secim = int(input("Alanını hesaplamak istediğiniz şekil (çıkmak için 0): "))
