@@ -25,7 +25,7 @@ def alan_hesaplama():
 
         secim = int(input("Alanını hesaplamak istediğiniz şekil (çıkmak için 0): "))
 
-if secim == 1:
+        if secim == 1:
             k = int(input("Karenin bir kenarı: "))
             kare(k)
 
