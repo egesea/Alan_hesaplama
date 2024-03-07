@@ -24,3 +24,36 @@ def alan_hesaplama():
         """)
 
         secim = int(input("Alanını hesaplamak istediğiniz şekil (çıkmak için 0): "))
+
+if secim == 1:
+            k = int(input("Karenin bir kenarı: "))
+            kare(k)
+
+        elif secim == 2:
+            k = int(input("Dikdörtgenin kısa kenarı: "))
+            u = int(input("Dikdörtgenin uzun kenarı: "))
+            dikdortgen(k, u)
+
+        elif secim == 3:
+            a = int(input("Yamuğun alt taban uzunuğu: "))
+            u = int(input("Yamuğun üst taban uzunuğu: "))
+            y = int(input("Yamuğun yüksekliği: "))
+            yamuk(a, u, y)
+
+        elif secim == 4:
+            k = int(input("Paralel kenarın alt taban uzunluğu: "))
+            y = int(input("Paralel kenarın yüksekliği: "))
+            paralelkenar(k, y)
+
+        elif secim == 5:
+            a = int(input("Eşkenar dörtgenin alt kenar uzunluğu: "))
+            y = int(input("Eşkenar dörtgenin yan kenar uzunluğu: "))
+            eskenardortgen(a, y)
+        elif secim == 0:
+            print("Programdan çıkılıyor...")
+            break
+
+        else:
+            print("Sadece belirtilen sayılardan birini giriniz.")
+if __name__ == '__main__':
+    alan_hesaplama()
